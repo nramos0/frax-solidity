@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "test": "npm test",
-    "tsc": "tsc"
+    "tsc": "tsc",
+    "hh": "cd src/hardhat; cross-env NODE_OPTIONS=--max_old_space_size=4096 npx hardhat"
   },
   "keywords": [
     "ethereum",
@@ -71,6 +72,7 @@
     "@openzeppelin/hardhat-upgrades": "^1.17.0",
     "@openzeppelin/test-helpers": "^0.5.15",
     "chai": "^4.3.6",
+    "cross-env": "^7.0.3",
     "ethereum-waffle": "^3.4.4",
     "ethers": "^5.6.4",
     "hardhat": "^2.9.3",
